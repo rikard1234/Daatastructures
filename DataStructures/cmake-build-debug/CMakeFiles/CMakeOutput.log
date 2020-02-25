@@ -21,7 +21,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/CMakeCCompilerId.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.22.27905/bin/Hostx86/x86/cl.exe 
@@ -45,84 +45,84 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdCXX/CMakeCXXCompilerId.exe"
+The CXX compiler identification is MSVC, found in "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_85836\fast 
-	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_85836.dir\build.make /nologo -L                  CMakeFiles\cmTC_85836.dir\build
-Building C object CMakeFiles/cmTC_85836.dir/testCCompiler.c.obj
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @C:\Users\Kuba\AppData\Local\Temp\nmD748.tmp
+Run Build Command(s):nmake /nologo cmTC_a82ce\fast 
+	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_a82ce.dir\build.make /nologo -L                  CMakeFiles\cmTC_a82ce.dir\build
+Building C object CMakeFiles/cmTC_a82ce.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @C:\Users\Kuba\AppData\Local\Temp\nm3FB3.tmp
 testCCompiler.c
-Linking C executable cmTC_85836.exe
-	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_85836.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_85836.dir\objects1.rsp @C:\Users\Kuba\AppData\Local\Temp\nmD91E.tmp
+Linking C executable cmTC_a82ce.exe
+	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_a82ce.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_a82ce.dir\objects1.rsp @C:\Users\Kuba\AppData\Local\Temp\nm4283.tmp
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_6597a\fast 
-	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_6597a.dir\build.make /nologo -L                  CMakeFiles\cmTC_6597a.dir\build
-Building C object CMakeFiles/cmTC_6597a.dir/CMakeCCompilerABI.c.obj
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @C:\Users\Kuba\AppData\Local\Temp\nmE5BF.tmp
+Run Build Command(s):nmake /nologo cmTC_e6e8b\fast 
+	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_e6e8b.dir\build.make /nologo -L                  CMakeFiles\cmTC_e6e8b.dir\build
+Building C object CMakeFiles/cmTC_e6e8b.dir/CMakeCCompilerABI.c.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @C:\Users\Kuba\AppData\Local\Temp\nm5260.tmp
 CMakeCCompilerABI.c
-Linking C executable cmTC_6597a.exe
-	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_6597a.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_6597a.dir\objects1.rsp @C:\Users\Kuba\AppData\Local\Temp\nmE776.tmp
+Linking C executable cmTC_e6e8b.exe
+	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_e6e8b.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_e6e8b.dir\objects1.rsp @C:\Users\Kuba\AppData\Local\Temp\nm52FE.tmp
 
 
 
 
 Detecting C [] compiler features compiled with the following output:
-Change Dir: C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_8b203\fast 
-	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_8b203.dir\build.make /nologo -L                  CMakeFiles\cmTC_8b203.dir\build
-Building C object CMakeFiles/cmTC_8b203.dir/feature_tests.c.obj
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @C:\Users\Kuba\AppData\Local\Temp\nmF02F.tmp
+Run Build Command(s):nmake /nologo cmTC_5b462\fast 
+	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_5b462.dir\build.make /nologo -L                  CMakeFiles\cmTC_5b462.dir\build
+Building C object CMakeFiles/cmTC_5b462.dir/feature_tests.c.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @C:\Users\Kuba\AppData\Local\Temp\nm57EE.tmp
 feature_tests.c
-Linking C executable cmTC_8b203.exe
-	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_8b203.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_8b203.dir\objects1.rsp @C:\Users\Kuba\AppData\Local\Temp\nmF09D.tmp
+Linking C executable cmTC_5b462.exe
+	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_5b462.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_5b462.dir\objects1.rsp @C:\Users\Kuba\AppData\Local\Temp\nm587C.tmp
 
 
     Feature record: C_FEATURE:1c_function_prototypes
     Feature record: C_FEATURE:1c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_88874\fast 
-	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_88874.dir\build.make /nologo -L                  CMakeFiles\cmTC_88874.dir\build
-Building CXX object CMakeFiles/cmTC_88874.dir/testCXXCompiler.cxx.obj
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @C:\Users\Kuba\AppData\Local\Temp\nmFB0C.tmp
+Run Build Command(s):nmake /nologo cmTC_58b08\fast 
+	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_58b08.dir\build.make /nologo -L                  CMakeFiles\cmTC_58b08.dir\build
+Building CXX object CMakeFiles/cmTC_58b08.dir/testCXXCompiler.cxx.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @C:\Users\Kuba\AppData\Local\Temp\nm61A3.tmp
 testCXXCompiler.cxx
-Linking CXX executable cmTC_88874.exe
-	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_88874.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_88874.dir\objects1.rsp @C:\Users\Kuba\AppData\Local\Temp\nmFBC9.tmp
+Linking CXX executable cmTC_58b08.exe
+	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_58b08.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_58b08.dir\objects1.rsp @C:\Users\Kuba\AppData\Local\Temp\nm6230.tmp
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_dc9ed\fast 
-	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_dc9ed.dir\build.make /nologo -L                  CMakeFiles\cmTC_dc9ed.dir\build
-Building CXX object CMakeFiles/cmTC_dc9ed.dir/CMakeCXXCompilerABI.cpp.obj
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @C:\Users\Kuba\AppData\Local\Temp\nm444.tmp
+Run Build Command(s):nmake /nologo cmTC_04ccc\fast 
+	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_04ccc.dir\build.make /nologo -L                  CMakeFiles\cmTC_04ccc.dir\build
+Building CXX object CMakeFiles/cmTC_04ccc.dir/CMakeCXXCompilerABI.cpp.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @C:\Users\Kuba\AppData\Local\Temp\nm6BD4.tmp
 CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_dc9ed.exe
-	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_dc9ed.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_dc9ed.dir\objects1.rsp @C:\Users\Kuba\AppData\Local\Temp\nm4F1.tmp
+Linking CXX executable cmTC_04ccc.exe
+	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_04ccc.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_04ccc.dir\objects1.rsp @C:\Users\Kuba\AppData\Local\Temp\nm6E27.tmp
 
 
 
 
 Detecting CXX [] compiler features compiled with the following output:
-Change Dir: C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_0f144\fast 
-	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_0f144.dir\build.make /nologo -L                  CMakeFiles\cmTC_0f144.dir\build
-Building CXX object CMakeFiles/cmTC_0f144.dir/feature_tests.cxx.obj
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @C:\Users\Kuba\AppData\Local\Temp\nmCFE.tmp
+Run Build Command(s):nmake /nologo cmTC_bba09\fast 
+	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_bba09.dir\build.make /nologo -L                  CMakeFiles\cmTC_bba09.dir\build
+Building CXX object CMakeFiles/cmTC_bba09.dir/feature_tests.cxx.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\cl.exe @C:\Users\Kuba\AppData\Local\Temp\nm8056.tmp
 feature_tests.cxx
-Linking CXX executable cmTC_0f144.exe
-	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_0f144.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_0f144.dir\objects1.rsp @C:\Users\Kuba\AppData\Local\Temp\nmDE9.tmp
+Linking CXX executable cmTC_bba09.exe
+	"C:\Program Files\JetBrains\CLion 2019.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_bba09.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1422~1.279\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_bba09.dir\objects1.rsp @C:\Users\Kuba\AppData\Local\Temp\nm80F3.tmp
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
