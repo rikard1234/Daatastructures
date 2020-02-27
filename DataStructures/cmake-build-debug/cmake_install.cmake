@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures
+# Install script for directory: C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

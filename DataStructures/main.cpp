@@ -14,137 +14,46 @@ using namespace std;;
 
 DynamicArray dynamicArray;
 ofstream file_out;
-int duration_container[20000] = {0};
-int n = 100;
-int sum = 0;
-unsigned int stdDeviation = 0;
-double average = 0;
-void measure_component(string file_name, int i) {
-    if (i == 29) {
+
+void measure_component(string file_name, int* durationContainer, int* sum, int i, int* sizes, int* j, int* w,
+                       int** data_ref) {
+    if(i % 30  == 0 && i != 0) {
+        int average;
+        average = *sum / 30;
         file_out.open(file_name, fstream::app);
-        for (int i = 0; i <= 29; i++) {
-            sum += duration_container[i];
-        }
-
-        average = sum / 30;
-
-        for (int i = 0; i <= 29; i++) {
-            stdDeviation = stdDeviation + ((duration_container[i] - average) * (duration_container[i] - average));
+        file_out << "FOR" << sizes[*j] << "ELEMENTS" << endl;
+        file_out << "AVERAGE :" << average << endl;
+        int stdDeviation = 0;
+        for(int i = 0; i < 30; i++) {
+            stdDeviation = stdDeviation + ((durationContainer[i] - average) * (durationContainer[i] - average));
         }
         pow(stdDeviation, 0.5);
-        file_out << "AVERAGE: " << average << "-----------------------------" << endl;
-        file_out << "DEVIATION: " << stdDeviation / 30 << "-----------------------------" << endl;
-        stdDeviation = 0;
-        sum = 0;
-        n = 500;
+        file_out << "DEVIATION :" << stdDeviation << endl;
         file_out.close();
-    }
-    else if (i == 59) {
-        file_out.open(file_name, fstream::app);
-        for (int i = 30; i <= 59; i++) {
-            sum += duration_container[i];
+        *w = 0;
+        *sum = 0;
+        if(i != 180) {
+            *j = *j + 1;
+            *data_ref = new int[sizes[*j]];
         }
-
-        average = sum / 30;
-
-        for (int i = 30; i <= 59; i++) {
-            stdDeviation = stdDeviation + ((duration_container[i] - average) * (duration_container[i] - average));
-        }
-        pow(stdDeviation, 0.5);
-        file_out << "AVERAGE: " << average << "-----------------------------" << endl;
-        file_out << "DEVIATION: " << stdDeviation / n << "-----------------------------" << endl;
-        stdDeviation = 0;
-        sum = 0;
-        n = 1000;
-    }
-    else if (i == 89) {
-        file_out.open(file_name, fstream::app);
-        for (int i = 60; i <= 89; i++) {
-            sum += duration_container[i];
-        }
-
-        average = sum / 30;
-
-        for (int i = 60; i <= 89; i++) {
-            stdDeviation = stdDeviation + ((duration_container[i] - average) * (duration_container[i] - average));
-        }
-        pow(stdDeviation, 0.5);
-        file_out << "AVERAGE: " << average << "-----------------------------" << endl;
-        file_out << "DEVIATION: " << stdDeviation / n << "-----------------------------" << endl;
-        stdDeviation = 0;
-        sum = 0;
-        n = 2000;
-        file_out.close();
-    }
-    else if (i == 119) {
-        file_out.open(file_name, fstream::app);
-        for (int i = 90; i <= 119; i++) {
-            sum += duration_container[i];
-        }
-
-        average = sum / 30;
-
-        for (int i = 90; i <= 119; i++) {
-            stdDeviation = stdDeviation + ((duration_container[i] - average) * (duration_container[i] - average));
-        }
-        pow(stdDeviation, 0.5);
-        file_out << "AVERAGE: " << average << "-----------------------------" << endl;
-        file_out << "DEVIATION: " << stdDeviation / n << "-----------------------------" << endl;
-        stdDeviation = 0;
-        sum = 0;
-        n = 5000;
-        file_out.close();
-    }
-    else if (i == 149) {
-        file_out.open(file_name, fstream::app);
-        for (int i = 120; i <= 149; i++) {
-            sum += duration_container[i];
-        }
-
-        average = sum / 30;
-
-        for (int i = 120; i <= 149; i++) {
-            stdDeviation = stdDeviation + ((duration_container[i] - average) * (duration_container[i] - average));
-        }
-        pow(stdDeviation, 0.5);
-        file_out << "AVERAGE: " << average << "-----------------------------" << endl;
-        file_out << "DEVIATION: " << stdDeviation / n << "-----------------------------" << endl;
-        stdDeviation = 0;
-        sum = 0;
-        n = 10000;
-        file_out.close();
-    }
-    else if (i == 179) {
-        file_out.open(file_name, fstream::app);
-        for (int i = 150; i <= 179; i++) {
-            sum += duration_container[i];
-        }
-
-        average = sum / 30;
-
-        for (int i = 150; i <= 179; i++) {
-            stdDeviation = stdDeviation + ((duration_container[i] - average) * (duration_container[i] - average));
-        }
-        pow(stdDeviation, 0.5);
-        file_out << "AVERAGE: " << average << "-----------------------------" << endl;
-        file_out << "DEVIATION: " << stdDeviation / n << "-----------------------------" << endl;
-        stdDeviation = 0;
-        sum = 0;
-        file_out.close();
     }
 }
 
 void addDA() {
-    n = 100;
-    for (int i = 0; i < 180; i++) {
-        file_out.open("addDA.txt", fstream::app);
-        int *data_ref = new int[n];
+    int sizes[] = {100, 500, 1000, 2000, 5000, 10000};
+    int durationContainer[30];
+    int sum = 0, j = 0;
+    int *data_ref = new int[sizes[j]];
 
-        for (int i = 0; i < n; i++) {
-            data_ref[i] = rand() % 200 - 100;
-        }
-        for (int i = 0; i < n; i++) {
-            dynamicArray.add((double) data_ref[i]);
+    for (int w = 0, i = 0; i <= 180; i++, w++) {
+        for (j; j < 6;) {
+            for (int i = 0; i < sizes[j]; i++) {
+                data_ref[i] = rand() % 200 - 100;
+            }
+            for (int i = 0; i < sizes[j]; i++) {
+                dynamicArray.add((double) data_ref[i]);
+            }
+            break;
         }
 
         double item = rand() % 200 - 100;
@@ -152,29 +61,30 @@ void addDA() {
         dynamicArray.add(item);
         auto t2 = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count();
-        duration_container[i] = duration;
+        dynamicArray.remove(item);
+        measure_component("addDA.txt", durationContainer,  &sum, i, sizes, &j, &w,
+                          &data_ref);
 
-        if (file_out.is_open()) {
-
-            file_out << duration << "  for i:" << i << endl;
-        }
-        file_out.close();
-        measure_component("AddDA.txt", i);
+        sum += duration;
+        durationContainer[w] = duration;
     }
-    file_out.close();
 }
 
 void findDA() {
-    n = 100;
-    for (int i = 0; i < 180; i++) {
-        file_out.open("findDA.txt", fstream::app);
-        int *data_ref = new int[n];
+    int sizes[] = {100, 500, 1000, 2000, 5000, 10000};
+    int durationContainer[30];
+    int sum = 0, j = 0;
+    int *data_ref = new int[sizes[j]];
 
-        for (int i = 0; i < n; i++) {
-            data_ref[i] = rand() % 200 - 100;
-        }
-        for (int i = 0; i < n; i++) {
-            dynamicArray.add((double) data_ref[i]);
+    for (int w = 0, i = 0; i <= 180; i++, w++) {
+        for (j; j < 6;) {
+            for (int i = 0; i < sizes[j]; i++) {
+                data_ref[i] = rand() % 200 - 100;
+            }
+            for (int i = 0; i < sizes[j]; i++) {
+                dynamicArray.add((double) data_ref[i]);
+            }
+            break;
         }
 
         double item = rand() % 200 - 100;
@@ -182,29 +92,30 @@ void findDA() {
         dynamicArray.find(item);
         auto t2 = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count();
-        duration_container[i] = duration;
 
-        if (file_out.is_open()) {
-            file_out << duration << "  for i:" << i << endl;
-        }
-        file_out.close();
-        measure_component("findDA.txt", i);
+        measure_component("findDA.txt", durationContainer,  &sum, i, sizes, &j, &w,
+                          &data_ref);
+
+        sum += duration;
+        durationContainer[w] = duration;
     }
-        file_out.close();
 }
 
 void removeDA() {
-    n = 100;
-    for (int i = 0; i < 180; i++) {
+    int sizes[] = {100, 500, 1000, 2000, 5000, 10000};
+    int durationContainer[30];
+    int sum = 0, j = 0;
+    int *data_ref = new int[sizes[j]];
 
-        file_out.open("removeDA.txt", fstream::app);
-        int *data_ref = new int[n];
-
-        for (int i = 0; i < n; i++) {
-            data_ref[i] = rand() % 200 - 100;
-        }
-        for (int i = 0; i < n; i++) {
-            dynamicArray.add((double) data_ref[i]);
+    for (int w = 0, i = 0; i <= 180; i++, w++) {
+        for (j; j < 6;) {
+            for (int i = 0; i < sizes[j]; i++) {
+                data_ref[i] = rand() % 200 - 100;
+            }
+            for (int i = 0; i < sizes[j]; i++) {
+                dynamicArray.add((double) data_ref[i]);
+            }
+            break;
         }
 
         double item = rand() % 200 - 100;
@@ -212,21 +123,17 @@ void removeDA() {
         dynamicArray.remove(item);
         auto t2 = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count();
-        duration_container[i] = duration;
 
-        if (file_out.is_open()) {
+        measure_component("RemoveDA.txt", durationContainer,  &sum, i, sizes, &j, &w,
+                &data_ref);
 
-            file_out << duration << "  for i:" << i << endl;
-        }
-        file_out.close();
-        measure_component("removeDA.txt", i);
+        sum += duration;
+        durationContainer[w] = duration;
     }
-        file_out.close();
 }
-
 int main() {
     srand(time(NULL));
-   //removeDA();
-  // addDA();
-  // findDA();
+    //removeDA();
+ // addDA();
+   //findDA();
 }

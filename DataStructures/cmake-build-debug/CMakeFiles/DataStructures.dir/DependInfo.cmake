@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/BinaryTree.cpp" "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/BinaryTree.cpp.obj"
-  "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/DList.cpp" "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/DList.cpp.obj"
-  "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/DynamicArray.cpp" "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/DynamicArray.cpp.obj"
-  "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/Node.cpp" "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/Node.cpp.obj"
-  "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/NodeDLL.cpp" "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/NodeDLL.cpp.obj"
-  "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/main.cpp" "C:/Users/Kuba/Desktop/projects/Nowy folder/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/main.cpp.obj"
+  "C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/BinaryTree.cpp" "C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/BinaryTree.cpp.obj"
+  "C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/DList.cpp" "C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/DList.cpp.obj"
+  "C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/DynamicArray.cpp" "C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/DynamicArray.cpp.obj"
+  "C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/Node.cpp" "C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/Node.cpp.obj"
+  "C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/NodeDLL.cpp" "C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/NodeDLL.cpp.obj"
+  "C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/main.cpp" "C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
