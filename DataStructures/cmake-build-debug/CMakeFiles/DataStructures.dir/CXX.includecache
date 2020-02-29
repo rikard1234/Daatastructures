@@ -6,29 +6,29 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/BinaryTree.h
+C:/Users/Kuba/Desktop/projects/DataStructures/BinaryTree.h
 Node.h
-C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/Node.h
+C:/Users/Kuba/Desktop/projects/DataStructures/Node.h
 
-C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/DList.h
+C:/Users/Kuba/Desktop/projects/DataStructures/DList.h
 NODEDLL.h
-C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/NODEDLL.h
+C:/Users/Kuba/Desktop/projects/DataStructures/NODEDLL.h
 
-C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/DynamicArray.h
+C:/Users/Kuba/Desktop/projects/DataStructures/DynamicArray.h
 
-C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/NODEDLL.h
+C:/Users/Kuba/Desktop/projects/DataStructures/NODEDLL.h
 
-C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/Node.h
+C:/Users/Kuba/Desktop/projects/DataStructures/Node.h
 
-C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/main.cpp
+C:/Users/Kuba/Desktop/projects/DataStructures/main.cpp
 iostream
 -
 DynamicArray.h
-C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/DynamicArray.h
+C:/Users/Kuba/Desktop/projects/DataStructures/DynamicArray.h
 BinaryTree.h
-C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/BinaryTree.h
+C:/Users/Kuba/Desktop/projects/DataStructures/BinaryTree.h
 DList.h
-C:/Users/Kuba/Desktop/cpmasking/Datastructures/DataStructures/DList.h
+C:/Users/Kuba/Desktop/projects/DataStructures/DList.h
 cstdlib
 -
 ctime
