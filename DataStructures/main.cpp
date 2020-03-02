@@ -39,7 +39,6 @@ void addDA() {
     int durationContainer[30];
     int j = 0;
 
-
     for (j; j < 6;) {
         for (int i = 0; i < 30; i++) {
             for (int i = 0; i < sizes[j]; i++) {
@@ -107,7 +106,7 @@ void removeDA() {
 
 int main() {
     srand(time(NULL));
-  // removeDA();
+    //removeDA();
     //addDA();
     //findDA();
 }
