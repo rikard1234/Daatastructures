@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Kuba/Desktop/projects/DataStructures/BinaryTree.cpp" "C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/BinaryTree.cpp.obj"
-  "C:/Users/Kuba/Desktop/projects/DataStructures/DList.cpp" "C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/DList.cpp.obj"
-  "C:/Users/Kuba/Desktop/projects/DataStructures/DynamicArray.cpp" "C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/DynamicArray.cpp.obj"
-  "C:/Users/Kuba/Desktop/projects/DataStructures/Node.cpp" "C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/Node.cpp.obj"
-  "C:/Users/Kuba/Desktop/projects/DataStructures/NodeDLL.cpp" "C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/NodeDLL.cpp.obj"
-  "C:/Users/Kuba/Desktop/projects/DataStructures/main.cpp" "C:/Users/Kuba/Desktop/projects/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/main.cpp.obj"
+  "C:/Users/Kuba/Desktop/DataStructures/BinaryTree.cpp" "C:/Users/Kuba/Desktop/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/BinaryTree.cpp.obj"
+  "C:/Users/Kuba/Desktop/DataStructures/DList.cpp" "C:/Users/Kuba/Desktop/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/DList.cpp.obj"
+  "C:/Users/Kuba/Desktop/DataStructures/DynamicArray.cpp" "C:/Users/Kuba/Desktop/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/DynamicArray.cpp.obj"
+  "C:/Users/Kuba/Desktop/DataStructures/Node.cpp" "C:/Users/Kuba/Desktop/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/Node.cpp.obj"
+  "C:/Users/Kuba/Desktop/DataStructures/NodeDLL.cpp" "C:/Users/Kuba/Desktop/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/NodeDLL.cpp.obj"
+  "C:/Users/Kuba/Desktop/DataStructures/main.cpp" "C:/Users/Kuba/Desktop/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

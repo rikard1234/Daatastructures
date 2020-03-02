@@ -15,11 +15,15 @@ using namespace std;;
 DynamicArray dynamicArray;
 ofstream file_out;
 
-void measure_component(string file_name, int* durationContainer, int sum, int* sizes) {
+void measure_component(string file_name, int* durationContainer, int sizes) {
     int average;
+    int sum = 0;
+    for(int i = 0; i < 30; i++) {
+       sum += durationContainer[i];
+    }
     average = sum / 30;
     file_out.open(file_name, fstream::app);
-    file_out << "FOR" << *sizes << "ELEMENTS" << endl;
+    file_out << "FOR" << sizes << "ELEMENTS" << endl;
     file_out << "AVERAGE :" << average << endl;
     int stdDeviation = 0;
     for(int i = 0; i < 30; i++) {
@@ -33,107 +37,77 @@ void measure_component(string file_name, int* durationContainer, int sum, int* s
 void addDA() {
     int sizes[] = {100, 500, 1000, 2000, 5000, 10000};
     int durationContainer[30];
-    int sum = 0, j = 0;
-    int *data_ref = new int[sizes[j]];
+    int j = 0;
+
 
     for (j; j < 6;) {
         for (int i = 0; i < 30; i++) {
-
             for (int i = 0; i < sizes[j]; i++) {
-                data_ref[i] = rand() % 200 - 100;
-                dynamicArray.add((double) data_ref[i]);
+                int temp = rand() % 2 * sizes[j] - sizes[j];
+                dynamicArray.add((double)temp);
             }
-
-            double item = rand() % 200 - 100;
+            double item = rand() % 2 * sizes[j] - sizes[j];
             auto t1 = std::chrono::high_resolution_clock::now();
             dynamicArray.add(item);
             auto t2 = std::chrono::high_resolution_clock::now();
             auto duration = std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count();
             dynamicArray.remove(item);
-
-            sum += duration;
             durationContainer[i] = duration;
         }
-
-        measure_component("addDA.txt", durationContainer, sum, &sizes[j]);
-        sum = 0;
+        measure_component("addDA.txt", durationContainer, sizes[j]);
         j++;
-        delete [] data_ref;
-        if(j < 6) data_ref =  new int [sizes[j]];
     }
-
 }
 
 void findDA() {
     int sizes[] = {100, 500, 1000, 2000, 5000, 10000};
     int durationContainer[30];
-    int sum = 0, j = 0;
-    int *data_ref = new int[sizes[j]];
+    int j = 0;
 
     for (j; j < 6;) {
         for (int i = 0; i < 30; i++) {
-
             for (int i = 0; i < sizes[j]; i++) {
-                data_ref[i] = rand() % 200 - 100;
-                dynamicArray.add((double) data_ref[i]);
+                int temp = rand() % 2 * sizes[j] - sizes[j];
+                dynamicArray.add((double)temp);
             }
-
-            double item = rand() % 200 - 100;
+            double item = rand() % 2 * sizes[j] - sizes[j];;
             auto t1 = std::chrono::high_resolution_clock::now();
             dynamicArray.find(item);
             auto t2 = std::chrono::high_resolution_clock::now();
             auto duration = std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count();
-
-
-            sum += duration;
             durationContainer[i] = duration;
         }
-
-        measure_component("findDA.txt", durationContainer, sum, &sizes[j]);
-        sum = 0;
+        measure_component("findDA.txt", durationContainer, sizes[j]);
         j++;
-        delete [] data_ref;
-        if(j < 6) data_ref =  new int [sizes[j]];
     }
-
 }
 
 void removeDA() {
     int sizes[] = {100, 500, 1000, 2000, 5000, 10000};
     int durationContainer[30];
-    int sum = 0, j = 0;
-    int *data_ref = new int[sizes[j]];
+    int j = 0;
 
     for (j; j < 6;) {
         for (int i = 0; i < 30; i++) {
-
             for (int i = 0; i < sizes[j]; i++) {
-                data_ref[i] = rand() % 200 - 100;
-                dynamicArray.add((double) data_ref[i]);
+                int temp = rand() % 2 * sizes[j] - sizes[j];
+                dynamicArray.add((double)temp);
             }
-
-            double item = rand() % 200 - 100;
+            double item = rand() % 2 * sizes[j] - sizes[j];;
             auto t1 = std::chrono::high_resolution_clock::now();
             dynamicArray.remove(item);
             auto t2 = std::chrono::high_resolution_clock::now();
             auto duration = std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count();
-
-            sum += duration;
             durationContainer[i] = duration;
         }
-
-        measure_component("removeDA.txt", durationContainer, sum, &sizes[j]);
-        sum = 0;
+        measure_component("removeDA.txt", durationContainer, sizes[j]);
         j++;
-        delete [] data_ref;
-        if(j < 6) data_ref =  new int [sizes[j]];
     }
-
 }
 
 int main() {
     srand(time(NULL));
-     removeDA();
+  // removeDA();
     //addDA();
     //findDA();
 }
