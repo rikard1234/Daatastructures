@@ -8,6 +8,7 @@
 class BinaryTree
 {
 private:
+    int size;
     Node* root;
     Node* add(double data, Node* root);
     Node* find(double data, Node* root);
@@ -17,6 +18,7 @@ public:
     void add(double data);
     Node* find(double data);
     void remove(double data);
+    int getSize();
 };
 
 #endif //DATASTRUCTURES_BINARYTREE_H

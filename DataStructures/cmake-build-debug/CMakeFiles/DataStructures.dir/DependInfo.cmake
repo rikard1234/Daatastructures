@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Kuba/Desktop/DataStructures/BinaryTree.cpp" "C:/Users/Kuba/Desktop/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/BinaryTree.cpp.obj"
-  "C:/Users/Kuba/Desktop/DataStructures/DList.cpp" "C:/Users/Kuba/Desktop/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/DList.cpp.obj"
-  "C:/Users/Kuba/Desktop/DataStructures/DynamicArray.cpp" "C:/Users/Kuba/Desktop/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/DynamicArray.cpp.obj"
-  "C:/Users/Kuba/Desktop/DataStructures/Node.cpp" "C:/Users/Kuba/Desktop/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/Node.cpp.obj"
-  "C:/Users/Kuba/Desktop/DataStructures/NodeDLL.cpp" "C:/Users/Kuba/Desktop/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/NodeDLL.cpp.obj"
-  "C:/Users/Kuba/Desktop/DataStructures/main.cpp" "C:/Users/Kuba/Desktop/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/main.cpp.obj"
+  "C:/Datastructures/DataStructures/BinaryTree.cpp" "C:/Datastructures/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/BinaryTree.cpp.obj"
+  "C:/Datastructures/DataStructures/DList.cpp" "C:/Datastructures/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/DList.cpp.obj"
+  "C:/Datastructures/DataStructures/DynamicArray.cpp" "C:/Datastructures/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/DynamicArray.cpp.obj"
+  "C:/Datastructures/DataStructures/Node.cpp" "C:/Datastructures/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/Node.cpp.obj"
+  "C:/Datastructures/DataStructures/NodeDLL.cpp" "C:/Datastructures/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/NodeDLL.cpp.obj"
+  "C:/Datastructures/DataStructures/main.cpp" "C:/Datastructures/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

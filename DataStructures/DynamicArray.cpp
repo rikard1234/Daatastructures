@@ -66,7 +66,12 @@ void DynamicArray::remove(double val)
             {
                 this->tab[j] = this->tab[j+1];
             }
-            this->size = this->size  - 1;
+            this->size = this->size - 1;
+            break;
         }
     }
+}
+
+int DynamicArray::getSize() {
+    return this->size;
 }

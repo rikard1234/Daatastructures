@@ -10,6 +10,7 @@
 class DList
 {
 private:
+    int size;
     NodeDLL* head;
 public:
     DList();
@@ -17,5 +18,6 @@ public:
     void show();
     NodeDLL* find(double data);
     void remove(double data);
+    int getSize();
 };
 #endif //DATASTRUCTURES_DLIST_H

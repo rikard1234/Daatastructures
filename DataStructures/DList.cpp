@@ -10,10 +10,15 @@ using namespace std;
 DList::DList()
 {
     this->head = nullptr;
+    this->size = 0;
 }
 
+int DList::getSize() {
+    return this->size;
+}
 void DList::add(double data) {
     NodeDLL* newNode = new NodeDLL(data);
+    this->size++;
     if(this->head == nullptr)
     {
         this->head = newNode;
@@ -75,5 +80,7 @@ void DList::remove(double data)
         node->left->right = nullptr;
         delete node;
     }
+
+    this->size--;
 
 }

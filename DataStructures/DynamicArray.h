@@ -16,6 +16,7 @@ public:
     void display();
     int find(double val);
     void remove(double val);
+    int getSize();
 };
 
 

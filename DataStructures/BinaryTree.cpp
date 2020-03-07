@@ -9,10 +9,16 @@ using namespace std;
 BinaryTree::BinaryTree()
 {
     this->root = nullptr;
+    this->size = 0;
+}
+
+int BinaryTree::getSize() {
+    return this->size;
 }
 
 void BinaryTree::add(double data)
 {
+    this->size++;
     this->add(data, this->root);
 }
 
@@ -22,7 +28,7 @@ Node* BinaryTree::add(double data, Node* node)
     {
         this->root = new Node(data);
     }
-    if(node == nullptr)
+    else if(node == nullptr)
     {
         node = new Node(data);
     }
@@ -131,6 +137,7 @@ void BinaryTree::remove(double data)
 
         delete toDelete;
     }
+
 }
 
 Node* BinaryTree::findMin(Node* node)
