@@ -66,16 +66,18 @@ void findDA() {
     for (j; j < 6;) {
         for (int i = 0; i < 30; i++) {
             DynamicArray dynamicArray;
+            double* values = new double [sizes[j]];
             for (int i = 0; i < sizes[j]; i++) {
-                int temp = rand() % 2 * sizes[j] - sizes[j];
-                dynamicArray.add((double) temp);
+                values[i] = rand() % 2 * sizes[j] - sizes[j];
+                dynamicArray.add(values[i]);
             }
-            double item = rand() % 2 * sizes[j] - sizes[j];;
+            int index = rand () % sizes[j];
             auto t1 = std::chrono::high_resolution_clock::now();
-            dynamicArray.find(item);
+            dynamicArray.find(values[index]);
             auto t2 = std::chrono::high_resolution_clock::now();
             auto duration = std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count();
             durationContainer[i] = duration;
+            delete values;
         }
         measure_component("findDA.txt", durationContainer, sizes[j]);
         j++;
