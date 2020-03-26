@@ -29,6 +29,7 @@ void measure_component(string file_name, long double* durationContainer, int siz
     for(int i = 0; i < 100; i++) {
         stdDeviation = stdDeviation + ((durationContainer[i] - average) * (durationContainer[i] - average));
     }
+    stdDeviation = stdDeviation / n;
     pow(stdDeviation, 0.5);
     file_out << "DEVIATION :" << stdDeviation << endl;
     file_out.close();
