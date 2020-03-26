@@ -11,22 +11,23 @@
 #include <fstream>
 #include <math.h>
 using namespace std;
-int sizes[] = {100, 2000, 50000, 80000, 90000};
-const int n = 5;
+int sizes[] = {10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000};
+const int n = 100;
+const int array_size = 10;
 ofstream file_out;
 
-void measure_component(string file_name, long double* durationContainer, int sizes) {
-    long  double average;
-    long  double sum = 0;
-    for(int i = 0; i < 100; i++) {
+void measure_component(string file_name, double* durationContainer, int sizes) {
+    double average;
+    double sum = 0;
+    for(int i = 0; i < n; i++) {
        sum += durationContainer[i];
     }
-    average = sum / 100;
+    average = sum / n;
     file_out.open(file_name, fstream::app);
     file_out << "FOR" << sizes << "ELEMENTS" << endl;
     file_out << "AVERAGE :" << average << endl;
-    long double stdDeviation = 0;
-    for(int i = 0; i < 100; i++) {
+    double stdDeviation = 0;
+    for(int i = 0; i < n; i++) {
         stdDeviation = stdDeviation + ((durationContainer[i] - average) * (durationContainer[i] - average));
     }
     stdDeviation = stdDeviation / n;
@@ -36,12 +37,12 @@ void measure_component(string file_name, long double* durationContainer, int siz
 }
 
 void addDA() {
-    long double durationContainer[100];
+    double durationContainer[n];
     int j = 0;
 
-    for (j; j < n;) {
-        for (int i = 0; i < 100; i++) {
-            BinaryTree da;
+    for (j; j < array_size;) {
+        for (int i = 0; i < n; i++) {
+            DynamicArray da;
             for (int i = 0; i < sizes[j]; i++) {
                 int temp = rand() % (2 * sizes[j]) - sizes[j];
                 da.add((double)temp);
@@ -59,12 +60,12 @@ void addDA() {
 }
 
 void findDA() {
-    long double durationContainer[100];
+    double durationContainer[n];
     int j = 0;
 
-    for (j; j < n;) {
-        for (int i = 0; i < 100; i++) {
-            BinaryTree da;
+    for (j; j < array_size;) {
+        for (int i = 0; i < n; i++) {
+            DynamicArray da;
             double* values = new double [sizes[j]];
             for (int i = 0; i < sizes[j]; i++) {
                 values[i] = rand() % (2 * sizes[j]) - sizes[j];
@@ -84,11 +85,12 @@ void findDA() {
 }
 
 void removeDA() {
-    long double durationContainer[100];
+    double durationContainer[n];
     int j = 0;
-    for (j; j < n;) {
-        for (int i = 0; i < 100; i++) {
-            BinaryTree da;
+
+    for (j; j < array_size;) {
+        for (int i = 0; i < n; i++) {
+            DynamicArray da;
             double* values = new double [sizes[j]];
             for (int i = 0; i < sizes[j]; i++) {
                 values[i] = rand() % (2 * sizes[j]) - sizes[j];
@@ -109,9 +111,9 @@ void removeDA() {
 
 int main() {
     srand(time(NULL));
-   // removeDA();
-    addDA();
- // findDA();
+    //removeDA();
+   addDA();
+ //findDA();
 
 
 
