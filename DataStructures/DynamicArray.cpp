@@ -19,17 +19,19 @@ DynamicArray::~DynamicArray()
 
 void DynamicArray::add(double item)
 {
-
-    if (this->size == 0)
-    {
-        this->tab[size] = item;
+    if(this->size == 0) {
+        this->tab[0] = item;
         this->size++;
     }
-    else
-    {
+    else {
         this->size++;
-        tab = (double*)realloc(this->tab, sizeof(double) * (this->size));
-        this->tab[this->size - 1] = item;
+        double* temp = new double[this->size];
+        for(int i = 0; i < this->size - 1; i++) {
+            temp[i] = this->tab[i];
+        }
+        temp[this->size-1] = item;
+        delete this->tab;
+        this->tab = temp;
     }
 }
 
@@ -43,7 +45,8 @@ void DynamicArray::display()
 
 int DynamicArray::find(double val)
 {
-    for (int i = 0; i < this->size - 1; ++i) {
+    if(this->size == 1) return 0;
+    for (int i = 0; i <= this->size - 1; ++i) {
         if (val == this->tab[i]) {
             return i;
         }
@@ -53,12 +56,16 @@ int DynamicArray::find(double val)
 
 void DynamicArray::remove(double val)
 {
+    if(this->size == 0)
+    {
+        return;
+    }
     if(this->size == 1)
     {
         this->size = 0;
         return;
     }
-    for(int i = 0; i < this->size - 1; ++i)
+    for(int i = 0; i <= this->size - 1; ++i)
     {
         if(this->tab[i] == val)
         {

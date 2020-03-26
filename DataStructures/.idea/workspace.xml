@@ -13,6 +13,23 @@
   <component name="ChangeListManager">
     <list default="true" id="df31bcd8-64dd-4d7c-ac6c-aa4e1439dfe7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryTree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DynamicArray.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DynamicArray.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Node.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/BinaryTree.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/BinaryTree.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/DList.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/DList.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/DynamicArray.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/DynamicArray.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/Node.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/Node.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/NodeDLL.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/NodeDLL.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DataStructures.dir/vc140.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataStructures.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DataStructures.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataStructures.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DataStructures.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataStructures.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DataStructures.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/addDA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/addDA.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/findDA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/findDA.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/removeDA.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,7 +107,20 @@
       <workItem from="1583510580638" duration="818000" />
       <workItem from="1583587353143" duration="7051000" />
       <workItem from="1583594581327" duration="423000" />
-      <workItem from="1584890797859" duration="1612000" />
+      <workItem from="1584890797859" duration="1884000" />
+      <workItem from="1584903047471" duration="697000" />
+      <workItem from="1584907403453" duration="7100000" />
+      <workItem from="1584966882268" duration="345000" />
+      <workItem from="1584967962831" duration="917000" />
+      <workItem from="1584969025331" duration="380000" />
+      <workItem from="1585069275416" duration="3663000" />
+      <workItem from="1585080779993" duration="217000" />
+      <workItem from="1585160535190" duration="6132000" />
+      <workItem from="1585166698871" duration="3000" />
+      <workItem from="1585168246452" duration="408000" />
+      <workItem from="1585170829405" duration="187000" />
+      <workItem from="1585171079443" duration="40000" />
+      <workItem from="1585246836475" duration="2980000" />
     </task>
     <servers />
   </component>

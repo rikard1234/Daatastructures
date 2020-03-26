@@ -10,23 +10,23 @@
 #include <algorithm>
 #include <fstream>
 #include <math.h>
-using namespace std;;
-
-
+using namespace std;
+int sizes[] = {100, 2000, 50000, 80000, 90000};
+const int n = 5;
 ofstream file_out;
 
-void measure_component(string file_name, int* durationContainer, int sizes) {
-    int average;
-    int sum = 0;
-    for(int i = 0; i < 30; i++) {
+void measure_component(string file_name, long double* durationContainer, int sizes) {
+    long  double average;
+    long  double sum = 0;
+    for(int i = 0; i < 100; i++) {
        sum += durationContainer[i];
     }
-    average = sum / 30;
+    average = sum / 100;
     file_out.open(file_name, fstream::app);
     file_out << "FOR" << sizes << "ELEMENTS" << endl;
     file_out << "AVERAGE :" << average << endl;
-    int stdDeviation = 0;
-    for(int i = 0; i < 30; i++) {
+    long double stdDeviation = 0;
+    for(int i = 0; i < 100; i++) {
         stdDeviation = stdDeviation + ((durationContainer[i] - average) * (durationContainer[i] - average));
     }
     pow(stdDeviation, 0.5);
@@ -35,20 +35,19 @@ void measure_component(string file_name, int* durationContainer, int sizes) {
 }
 
 void addDA() {
-    int sizes[] = {100, 500, 1000, 2000, 5000, 10000};
-    int durationContainer[30];
+    long double durationContainer[100];
     int j = 0;
 
-    for (j; j < 6;) {
-        for (int i = 0; i < 30; i++) {
-            DynamicArray dynamicArray;
+    for (j; j < n;) {
+        for (int i = 0; i < 100; i++) {
+            BinaryTree da;
             for (int i = 0; i < sizes[j]; i++) {
-                int temp = rand() % 2 * sizes[j] - sizes[j];
-                dynamicArray.add((double)temp);
+                int temp = rand() % (2 * sizes[j]) - sizes[j];
+                da.add((double)temp);
             }
-            double item = rand() % 2 * sizes[j] - sizes[j];
+            double item = rand() % (2 * sizes[j]) - sizes[j];
             auto t1 = std::chrono::high_resolution_clock::now();
-            dynamicArray.add(item);
+            da.add(item);
             auto t2 = std::chrono::high_resolution_clock::now();
             auto duration = std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count();
             durationContainer[i] = duration;
@@ -59,21 +58,20 @@ void addDA() {
 }
 
 void findDA() {
-    int sizes[] = {100, 500, 1000, 2000, 5000, 10000};
-    int durationContainer[30];
+    long double durationContainer[100];
     int j = 0;
 
-    for (j; j < 6;) {
-        for (int i = 0; i < 30; i++) {
-            DynamicArray dynamicArray;
+    for (j; j < n;) {
+        for (int i = 0; i < 100; i++) {
+            BinaryTree da;
             double* values = new double [sizes[j]];
             for (int i = 0; i < sizes[j]; i++) {
-                values[i] = rand() % 2 * sizes[j] - sizes[j];
-                dynamicArray.add(values[i]);
+                values[i] = rand() % (2 * sizes[j]) - sizes[j];
+                da.add(values[i]);
             }
             int index = rand () % sizes[j];
             auto t1 = std::chrono::high_resolution_clock::now();
-            dynamicArray.find(values[index]);
+            da.find(values[index]);
             auto t2 = std::chrono::high_resolution_clock::now();
             auto duration = std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count();
             durationContainer[i] = duration;
@@ -85,20 +83,19 @@ void findDA() {
 }
 
 void removeDA() {
-    int sizes[] = {100, 500, 1000, 2000, 5000, 10000};
-    int durationContainer[30];
+    long double durationContainer[100];
     int j = 0;
-    for (j; j < 6;) {
-        for (int i = 0; i < 30; i++) {
-            DynamicArray dynamicArray;
+    for (j; j < n;) {
+        for (int i = 0; i < 100; i++) {
+            BinaryTree da;
             double* values = new double [sizes[j]];
             for (int i = 0; i < sizes[j]; i++) {
-                values[i] = rand() % 2 * sizes[j] - sizes[j];
-                dynamicArray.add(values[i]);
+                values[i] = rand() % (2 * sizes[j]) - sizes[j];
+                da.add(values[i]);
             }
             int index = rand () % sizes[j];
             auto t1 = std::chrono::high_resolution_clock::now();
-            dynamicArray.remove(values[index]);
+            da.remove(values[index]);
             auto t2 = std::chrono::high_resolution_clock::now();
             auto duration = std::chrono::duration_cast<std::chrono::microseconds>(t2 - t1).count();
             durationContainer[i] = duration;
@@ -111,8 +108,10 @@ void removeDA() {
 
 int main() {
     srand(time(NULL));
-  // removeDA();
-  // addDA();
- //  findDA();
+   // removeDA();
+    addDA();
+ // findDA();
+
+
 
 }

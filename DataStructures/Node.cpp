@@ -13,4 +13,5 @@ Node::Node(double data)
 }
 Node::~Node()
 {
+
 }

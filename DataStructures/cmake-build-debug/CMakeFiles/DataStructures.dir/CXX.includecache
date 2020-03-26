@@ -6,51 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Datastructures/DataStructures/BinaryTree.cpp
-BinaryTree.h
 C:/Datastructures/DataStructures/BinaryTree.h
 Node.h
 C:/Datastructures/DataStructures/Node.h
-iostream
--
-
-C:/Datastructures/DataStructures/BinaryTree.h
-Node.h
-C:/Datastructures/DataStructures/Node.h
-
-C:/Datastructures/DataStructures/DList.cpp
-cstddef
--
-iostream
--
-DList.h
-C:/Datastructures/DataStructures/DList.h
 
 C:/Datastructures/DataStructures/DList.h
 NODEDLL.h
 C:/Datastructures/DataStructures/NODEDLL.h
 
-C:/Datastructures/DataStructures/DynamicArray.cpp
-iostream
-C:/Datastructures/DataStructures/iostream
-DynamicArray.h
-C:/Datastructures/DataStructures/DynamicArray.h
-
 C:/Datastructures/DataStructures/DynamicArray.h
 
 C:/Datastructures/DataStructures/NODEDLL.h
 
-C:/Datastructures/DataStructures/Node.cpp
-Node.h
 C:/Datastructures/DataStructures/Node.h
-
-C:/Datastructures/DataStructures/Node.h
-
-C:/Datastructures/DataStructures/NodeDLL.cpp
-NodeDLL.h
-C:/Datastructures/DataStructures/NodeDLL.h
-
-C:/Datastructures/DataStructures/NodeDLL.h
 
 C:/Datastructures/DataStructures/main.cpp
 iostream

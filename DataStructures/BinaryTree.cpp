@@ -73,11 +73,10 @@ Node* BinaryTree::find(double data, Node* node)
 void BinaryTree::remove(double data)
 {
     Node* toDelete = find(data);
-
     if (toDelete == nullptr) return;
-
     if (toDelete->right == nullptr && toDelete->left == nullptr)
     {
+
         if(toDelete->parent != nullptr)
         {
             if (toDelete->parent->data < toDelete->data)
@@ -95,6 +94,7 @@ void BinaryTree::remove(double data)
         }
 
         delete toDelete;
+        return;
     }
     else if (toDelete->left != nullptr && toDelete->right != nullptr)
     {
@@ -116,12 +116,12 @@ void BinaryTree::remove(double data)
         if (toDelete->parent == nullptr)
         {
             this->root = this->root->right;
+            this->root->parent = nullptr;//tu nie bylo tego
         }
         else
         {
             toDelete->parent->right = toDelete->right;
         }
-
         delete toDelete;
     }
     else
@@ -129,12 +129,12 @@ void BinaryTree::remove(double data)
         if (toDelete->parent == nullptr)
         {
             this->root = this->root->left;
+            this->root->parent = nullptr;//tu nie bylo tego
         }
         else
         {
             toDelete->parent->left = toDelete->left;
         }
-
         delete toDelete;
     }
 
