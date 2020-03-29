@@ -11,9 +11,9 @@
 #include <fstream>
 #include <math.h>
 using namespace std;
-int sizes[] = {10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000};
-const int n = 100;
-const int array_size = 10;
+int sizes[] = {40000};
+const int n = 20;
+const int array_size = 1;
 ofstream file_out;
 
 void measure_component(string file_name, double* durationContainer, int sizes) {
@@ -42,7 +42,7 @@ void addDA() {
 
     for (j; j < array_size;) {
         for (int i = 0; i < n; i++) {
-            DynamicArray da;
+            DList da;
             for (int i = 0; i < sizes[j]; i++) {
                 int temp = rand() % (2 * sizes[j]) - sizes[j];
                 da.add((double)temp);
@@ -65,7 +65,7 @@ void findDA() {
 
     for (j; j < array_size;) {
         for (int i = 0; i < n; i++) {
-            DynamicArray da;
+            DList da;
             double* values = new double [sizes[j]];
             for (int i = 0; i < sizes[j]; i++) {
                 values[i] = rand() % (2 * sizes[j]) - sizes[j];
@@ -90,7 +90,7 @@ void removeDA() {
 
     for (j; j < array_size;) {
         for (int i = 0; i < n; i++) {
-            DynamicArray da;
+            DList da;
             double* values = new double [sizes[j]];
             for (int i = 0; i < sizes[j]; i++) {
                 values[i] = rand() % (2 * sizes[j]) - sizes[j];
@@ -111,10 +111,9 @@ void removeDA() {
 
 int main() {
     srand(time(NULL));
-    //removeDA();
+   // removeDA();
    addDA();
- //findDA();
-
+// findDA();
 
 
 }
